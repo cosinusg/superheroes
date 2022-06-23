@@ -112,8 +112,8 @@ class _SearchWidgetState extends State<SearchWidget> {
           borderRadius: BorderRadius.circular(8),
           borderSide: BorderSide(
             style: BorderStyle.solid,
-            color: Color(0x3dffffff),
-            width: 1,
+            color: Color(0xffffffff),
+            width: 2,
           ),
         ),
         focusedBorder: OutlineInputBorder(
