@@ -68,7 +68,7 @@ class InfoWithButton extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Text(
-              subtitle.toUpperCase(),
+              subtitle,
               style: TextStyle(
                   color: SuperHeroesColors.whiteText,
                   fontSize: 16,
