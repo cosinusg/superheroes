@@ -48,12 +48,12 @@ class MainBloc {
       } else if (value.searchText.length < minSymbols) {
         stateSubject.add(MainPageState.minSymbols);
       } else {
-        searchForSuperHeroes(value.searchText);
+        searchForSuperheroes(value.searchText);
       }
     });
   }
 
-  void searchForSuperHeroes(final String text) {
+  void searchForSuperheroes(final String text) {
     stateSubject.add(MainPageState.loading);
     searchSubscription = search(text).asStream().listen((searchResults) {
       if (searchResults.isEmpty) {
@@ -131,7 +131,7 @@ class MainBloc {
   }
 
   void retry() {
-    searchForSuperHeroes(currentTextSubject.value);
+    searchForSuperheroes(currentTextSubject.value);
   } 
 
   void dispose() {
